@@ -6,16 +6,15 @@
 #   new_sentence
 # end
 
-# def reverse_each_word(sentence)
-#   sentence.split do |word|
-#   "word".reverse
+def reverse_each_word(sentence)
+  sentence.split.collect do |word|
+  word.reverse
+  end
+end
+
+# def reverse_each_word(sentence1)
+#   sentence1.split.collect
+#   new_array.collect do |word|
+#     sentence1.reverse
 #   end
 # end
-
-def reverse_each_word(sentence1)
-  new_array = [sentence1.split]
-  new_array.collect do |word|
-    new_array << sentence1.reverse
-  end
-  new_array
-end
